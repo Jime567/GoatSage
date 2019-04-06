@@ -9,7 +9,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:theme="@style/AppTheme.NoActionBar">
-<!-- end of nav drawer first section-->
+    <!-- end of nav drawer first section-->
 
 
     <ScrollView
@@ -18,9 +18,7 @@
         android:fillViewport="true">
 
 
-
-
-    <android.support.constraint.ConstraintLayout
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#3366ff"
@@ -136,7 +134,7 @@
         </android.support.constraint.ConstraintLayout>
 
     </ScrollView>
-<!--Second part of navigation drawer stuff required-->
+    <!--Second part of navigation drawer stuff required-->
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="match_parent"

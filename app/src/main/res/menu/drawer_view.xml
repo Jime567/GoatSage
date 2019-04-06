@@ -7,8 +7,7 @@
 
     <item
         android:id="@+id/home_button"
-        android:title="Sage Home"
-        />
+        android:title="Sage Home" />
     <item
         android:id="@+id/meditation"
         android:menuCategory="container"

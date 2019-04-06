@@ -35,13 +35,10 @@ public class DisplayScreen extends AppCompatActivity {
                         if (item == R.id.meditation) {
                             Intent intent = new Intent(DisplayScreen.this, DisplayScreen.class);
                             startActivity(intent);
-                        }
-
-                        else if (item == R.id.home_button) {
+                        } else if (item == R.id.home_button) {
                             Intent intent = new Intent(DisplayScreen.this, MainActivity.class);
                             startActivity(intent);
-                        }
-                        else if (item == R.id.faq_nav) {
+                        } else if (item == R.id.faq_nav) {
                             Intent intent = new Intent(DisplayScreen.this, FAQ.class);
                             startActivity(intent);
                         }
@@ -51,13 +48,13 @@ public class DisplayScreen extends AppCompatActivity {
                         return true;
                     }
                 });
-        ImageView mImageView = (ImageView)findViewById(R.id.menu_button_zippo);
-            mImageView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    drawerLayout.openDrawer(Gravity.START);
-                }
-            });
+        ImageView mImageView = (ImageView) findViewById(R.id.menu_button_zippo);
+        mImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                drawerLayout.openDrawer(Gravity.START);
+            }
+        });
 
     }
 }

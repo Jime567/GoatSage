@@ -16,6 +16,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+
 import com.bumptech.glide.Glide;
 
 import com.bumptech.glide.Glide;
@@ -23,6 +24,7 @@ import com.bumptech.glide.Glide;
 
 public class FAQ extends AppCompatActivity {
     private DrawerLayout drawerLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +66,7 @@ public class FAQ extends AppCompatActivity {
                 });
         //End of Menu Options Functions
 
-       final ImageView firstImage = (ImageView)findViewById(R.id.SageGoodLooking);
+        final ImageView firstImage = (ImageView) findViewById(R.id.SageGoodLooking);
         Glide.with(this)
                 .load(R.drawable.p_why_goat)
                 .into(firstImage);
@@ -93,12 +95,10 @@ public class FAQ extends AppCompatActivity {
         });
 
 
-
-
-        final ImageView secondImage = (ImageView)findViewById(R.id.sageObjective);
-            Glide.with(this)
-            .load(R.drawable.p_sage_objective)
-            .into(secondImage);
+        final ImageView secondImage = (ImageView) findViewById(R.id.sageObjective);
+        Glide.with(this)
+                .load(R.drawable.p_sage_objective)
+                .into(secondImage);
 
         secondImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -122,7 +122,7 @@ public class FAQ extends AppCompatActivity {
         });
 
 
-        final ImageView thirdImage = (ImageView)findViewById(R.id.benefitMe);
+        final ImageView thirdImage = (ImageView) findViewById(R.id.benefitMe);
         Glide.with(this)
                 .load(R.drawable.p_benefit_me)
                 .into(thirdImage);
@@ -149,7 +149,7 @@ public class FAQ extends AppCompatActivity {
         });
 
 
-        final ImageView fourthImage = (ImageView)findViewById(R.id.sageImpact);
+        final ImageView fourthImage = (ImageView) findViewById(R.id.sageImpact);
         Glide.with(this)
                 .load(R.drawable.p_sage_impact)
                 .into(fourthImage);
@@ -176,8 +176,7 @@ public class FAQ extends AppCompatActivity {
         });
 
 
-
-        final ImageView fifthImage = (ImageView)findViewById(R.id.helpSageGoat);
+        final ImageView fifthImage = (ImageView) findViewById(R.id.helpSageGoat);
         Glide.with(this)
                 .load(R.drawable.p_help_sage)
                 .into(fifthImage);
@@ -203,7 +202,7 @@ public class FAQ extends AppCompatActivity {
 
         });
 
-        final ImageView sixthImage = (ImageView)findViewById(R.id.whereGoatSage);
+        final ImageView sixthImage = (ImageView) findViewById(R.id.whereGoatSage);
         Glide.with(this)
                 .load(R.drawable.p_where_goat)
                 .into(sixthImage);

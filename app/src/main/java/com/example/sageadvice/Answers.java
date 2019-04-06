@@ -68,26 +68,21 @@ public class Answers extends AppCompatActivity {
         TextView response = findViewById(R.id.answerText);
 
         if (code == 1) {
-                    title.setText("Why is Goat Sage so Good Looking?");
-                    response.setText("   First, the fact your are asking this question shows how observant your are. Second, the fact this question in particular is frequently asked shows there is still hope for the majority of users. Now to answer: it is because when one is as intelligent as Sage Goat, they can not simply help but to be amazing in every other aspect too. ");
-        }
-        else if (code == 2) {
-title.setText("What is the Goat Sage Objective?");
-response.setText("   Goat Sage has five primary objectives. First, improve literacy rates worldwide. Second, spread the Goat Sage movement. Third, to put pants on all chiddlers. Fourth, to improve the quality of life for all. Fifth, to do all the previous thingers in the most epic ways possible.");
-        }
-        else if (code == 3) {
+            title.setText("Why is Goat Sage so Good Looking?");
+            response.setText("   First, the fact your are asking this question shows how observant your are. Second, the fact this question in particular is frequently asked shows there is still hope for the majority of users. Now to answer: it is because when one is as intelligent as Sage Goat, they can not simply help but to be amazing in every other aspect too. ");
+        } else if (code == 2) {
+            title.setText("What is the Goat Sage Objective?");
+            response.setText("   Goat Sage has five primary objectives. First, improve literacy rates worldwide. Second, spread the Goat Sage movement. Third, to put pants on all chiddlers. Fourth, to improve the quality of life for all. Fifth, to do all the previous thingers in the most epic ways possible.");
+        } else if (code == 3) {
             title.setText("How does Goat Sage benefit me?");
             response.setText("   Goat Sage benefits any of his users by providing the most up to date and relevant facts and advice for whatever the situation. He is an awesome party asset, bodyguard, and fashion advisor. He also single handedly improves the lives of many poor peoples around the world at the same time. For you specifically, he can tell you when your ideas are bad, when your forgot your clothes, and where to go to get mugged by his associates.");
-        }
-        else if (code == 4) {
+        } else if (code == 4) {
             title.setText("Global Goat Sage Impact?");
-    response.setText("   On the global scale, Goat Sage is a major contributor to three-hundred charities humanitarian efforts (only one of which he does not own *Ramen Noodle Co.*). Goat Sage also provides wifi to impoverished places and works closely with the big corporations to make as much money for something undisclosed to you. Goat Sage also received an Emmy Award for his efforts to help orphans in the Oceanic Islands. ");
-        }
-        else if (code == 5) {
+            response.setText("   On the global scale, Goat Sage is a major contributor to three-hundred charities humanitarian efforts (only one of which he does not own *Ramen Noodle Co.*). Goat Sage also provides wifi to impoverished places and works closely with the big corporations to make as much money for something undisclosed to you. Goat Sage also received an Emmy Award for his efforts to help orphans in the Oceanic Islands. ");
+        } else if (code == 5) {
             title.setText("Can I Help Goat Sage?");
             response.setText("   Before we answer this, one must know that Goat Sage does not need help because he is too good for everyone. However, you can help spread the Goat Sage message and movement by getting his app on as many people's devices as possible by legal means. Sage Goat isn't bound by law either, so illegal means are a green light too.");
-        }
-        else if (code == 6) {
+        } else if (code == 6) {
             title.setText("Where is Goat Sage?");
             response.setText("   If you are asking this question, then you are missing some fundamental principles of the existence of Goat Sage in your intellect. Goat Sage is not bound by geographical positions as we are, instead he transcends them and does whatever he wants. Just think, he might even be living in your liver right now....          Food for thought :)");
         }
