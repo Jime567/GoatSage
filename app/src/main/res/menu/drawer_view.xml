@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_button"
+        android:title="Sage Home"
+        />
+    <item
+        android:id="@+id/meditation"
+        android:menuCategory="container"
+        android:title="Meditation"
+        tools:menuCategory="system" />
+    <item
+        android:id="@+id/faq_nav"
+        android:menuCategory="container"
+        android:title="FAQ"
+        tools:menuCategory="system" />
+</menu>

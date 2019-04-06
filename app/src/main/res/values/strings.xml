@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Goat Sage</string>
+    <string name="adviceButton">Sage Advice</string>
+    <string name="motivationButton">Motivational Praise</string>
+    <string name="message">Hello Peeps! Click a button to get some goat sage stuff!</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="nextScreenButton">Button</string>
+    <string name="menu_name">Menu</string>
+    <string name="title_activity_faq">FAQ</string>
+</resources>
