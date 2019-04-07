@@ -19,7 +19,7 @@ public class Answers extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_answers);
-
+        //Sets up tool bar (made in xml file) to be action bar to hold all the icons and menus
         Toolbar toolbar = findViewById(R.id.toolbar3);
         setSupportActionBar(toolbar);
         //Set up for menu option in toolbar

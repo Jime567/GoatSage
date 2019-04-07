@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Spinner
+        android:id="@+id/aboutMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/outline_more_vert_white_18dp"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/aboutOption"
+        android:title="About"
+        android:icon="@drawable/ic_error_black_24dp" />
+
+</menu>

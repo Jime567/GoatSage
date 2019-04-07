@@ -7,4 +7,10 @@
     <string name="nextScreenButton">Button</string>
     <string name="menu_name">Menu</string>
     <string name="title_activity_faq">FAQ</string>
+    <string name="versionnumtext">Version: v2.1</string>
+    <string name="releasedate">April 5, 2019</string>
+    <string name="release_notes">Release Notes: \n
+         > Fixed Display Issues \n
+         > Improved Color Coordination \n
+    </string>
 </resources>

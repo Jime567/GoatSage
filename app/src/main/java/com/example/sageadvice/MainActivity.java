@@ -8,6 +8,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                         // Add code here to update the UI based on the item selected
-                        // For example, swap UI fragments here
+
 
                         return true;
                     }
@@ -74,10 +75,22 @@ public class MainActivity extends AppCompatActivity {
             case android.R.id.home:
                 drawerLayout.openDrawer(GravityCompat.START);
                 return true;
+            case R.id.aboutOption:
+                Intent intent = new Intent(MainActivity.this, AboutPage.class);
+                startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
 
     }
+
+    //Hopefully adds the about menu to actionbar in top right
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.about, menu);
+        return true;
+    }
+
+
 
     public void Advice(View view) {
         Random numGenerator = new Random();
