@@ -2,7 +2,9 @@
 Goat Sage is the premiere artificial intelligence app of today.
 
 <b>Downloads</b>
+
 May 17, 2019
+
 [Goat Sage Alpha 3.0 ---- GoatSageAlpha3.0.apk](https://github.com/Jime567/GoatSage/blob/master/GoatSageAlpha3.0.apk?raw=true)
 
 * Fixed Exploding Images on FAQ in Landscape Mode 
