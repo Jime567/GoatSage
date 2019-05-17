@@ -41,6 +41,9 @@ public class DisplayScreen extends AppCompatActivity {
                         } else if (item == R.id.faq_nav) {
                             Intent intent = new Intent(DisplayScreen.this, FAQ.class);
                             startActivity(intent);
+                        } else if (item == R.id.loginMenuOption) {
+                            Intent intent = new Intent(DisplayScreen.this, Login.class);
+                            startActivity(intent);
                         }
                         // Add code here to update the UI based on the item selected
                         // For example, swap UI fragments here

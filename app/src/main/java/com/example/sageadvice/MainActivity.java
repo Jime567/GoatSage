@@ -1,5 +1,6 @@
 package com.example.sageadvice;
 
+import android.app.Application;
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,7 +13,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -20,15 +23,19 @@ import static android.provider.AlarmClock.EXTRA_MESSAGE;
 import static com.example.sageadvice.R.id.showMessage;
 
 public class MainActivity extends AppCompatActivity {
+    databaseHelper myDb;
     private TextView dispMessage;
     private DrawerLayout drawerLayout;
     public final static String EXTRA_MESSAGE = "com.example.SageAdvice.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         dispMessage = (TextView) findViewById(showMessage);
+        myDb = new databaseHelper(this);
+        //Need to make toolbar in xml on new activities to use the menu button
         Toolbar toolbar = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
@@ -55,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
                         } else if (item == R.id.faq_nav) {
                             Intent intent = new Intent(MainActivity.this, FAQ.class);
                             startActivity(intent);
+                        } else if (item == R.id.loginMenuOption) {
+                            Intent intent = new Intent(MainActivity.this, Login.class);
+                            startActivity(intent);
                         }
 
 
@@ -79,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, AboutPage.class);
                 startActivity(intent);
         }
+
         return super.onOptionsItemSelected(item);
 
     }
@@ -89,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.about, menu);
         return true;
     }
-
+    //end of antionbar top right stuff
 
 
     public void Advice(View view) {
@@ -244,6 +255,26 @@ public class MainActivity extends AppCompatActivity {
     public void nextScreen(View view) {
         Intent intent = new Intent(this, DisplayScreen.class);
         startActivity(intent);
-    }//end of nextScreen()
-}
 
+    }//end of nextScreen()
+
+
+    public void secretTracker(View v) {
+        int temp = ((GlobalVariables) this.getApplication()).getSecretTrack();
+        temp += 1;
+        ((GlobalVariables) this.getApplication()).setSecretTrack(temp);
+        temp = ((GlobalVariables) this.getApplication()).getSecretTrack();
+
+        if (temp == 4) {
+
+            Toast.makeText(getApplicationContext(), "Click Once More to Enter Secret Mode", Toast.LENGTH_LONG).show();
+        } else if (temp == 5) {
+            ((GlobalVariables) this.getApplication()).setSecretTrack(0);
+            Intent intent = new Intent(this, SecretActivity.class);
+            startActivity(intent);
+
+        }
+
+    } //end of secretTracker
+
+}

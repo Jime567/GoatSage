@@ -2,15 +2,19 @@
     <string name="app_name">Goat Sage</string>
     <string name="adviceButton">Sage Advice</string>
     <string name="motivationButton">Motivational Praise</string>
-    <string name="message">Hello Peeps! Click a button to get some goat sage stuff!</string>
+    <string name="message">Click a button to get Sage Praise and Advice. Button pressing is done at your own risk.</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="nextScreenButton">Button</string>
     <string name="menu_name">Menu</string>
     <string name="title_activity_faq">FAQ</string>
-    <string name="versionnumtext">Version: v2.1</string>
-    <string name="releasedate">April 5, 2019</string>
+    <string name="versionnumtext">Version: v3.0</string>
+    <string name="releasedate">May 17, 2019</string>
     <string name="release_notes">Release Notes: \n
-         > Fixed Display Issues \n
-         > Improved Color Coordination \n
+         > Fixed Exploding Images on FAQ in Landscape Mode \n
+         > Implemented Secret Puzzle Features \n
+         > Added Goat Sage Accounts \n
+         > Made Registration Available to those Who Solve Secret Puzzle Features \n
+         > Started Initial Preparation for Goat Sage Elite Users \n
+         > Updated Home Screen Message \n
     </string>
 </resources>

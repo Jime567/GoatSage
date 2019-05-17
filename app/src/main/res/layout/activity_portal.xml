@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?><!--This is the first section needed for navigation drawer-->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:itemIconTint="@color/subMenu"
+    android:theme="@style/AppTheme.NoActionBar">
+    <!-- end of nav drawer first section-->
+    <!--Scrollview helps fix possible display problems-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:background="#3366ff"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".portal">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbartering"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="?attr/colorControlActivated"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="336dp"
+                android:layout_height="579dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="    Your efforts to make it to this page are commendable. Unfortunately this area is still under developement. However, you can gladly consider yourself among the Sage Elite forces of the Goat Sage. Congratulations. All future updates and features will be accessible to you from this portal."
+                android:textColor="@color/lightTextColorPink"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbartering" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+    <!--Second part of navigation drawer stuff required-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+
+        app:menu="@menu/drawer_view" />
+</android.support.v4.widget.DrawerLayout>

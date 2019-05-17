@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#D81B60</color>
-    <color name="colorPrimaryReplacement">#008577</color>
     <color name="colorPrimaryDark">#D81B60</color>
-    <color name="colorPrimaryDarkReplacement">#00574B</color>
+    <color name="colorPrimaryReplacement">#008577</color>
+    <color name="colorPrimaryDarkReplacement">#008577</color>
+    <color name="colorOfText">#ff66ff</color>
     <color name="colorAccent">#D81B60</color>
     <color name="subMenu">#f18eb2</color>
+    <color name="background">#3366ff</color>
+    <color name="lightTextColorPink">#ff66ff</color>
 </resources>

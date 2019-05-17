@@ -58,6 +58,9 @@ public class FAQ extends AppCompatActivity {
                         } else if (item == R.id.faq_nav) {
                             Intent intent = new Intent(FAQ.this, FAQ.class);
                             startActivity(intent);
+                        } else if (item == R.id.loginMenuOption) {
+                            Intent intent = new Intent(FAQ.this, Login.class);
+                            startActivity(intent);
                         }
 
 

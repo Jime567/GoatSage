@@ -7,15 +7,24 @@
 
     <item
         android:id="@+id/home_button"
-        android:title="Sage Home" />
+        android:title="Sage Home"
+        android:background="@color/subMenu" />
     <item
         android:id="@+id/meditation"
         android:menuCategory="container"
         android:title="Meditation"
-        tools:menuCategory="system" />
+        tools:menuCategory="system"
+        android:background="@color/subMenu" />
     <item
         android:id="@+id/faq_nav"
         android:menuCategory="container"
         android:title="FAQ"
-        tools:menuCategory="system" />
+        tools:menuCategory="system"
+        android:background="@color/subMenu" />
+    <item
+        android:id="@+id/loginMenuOption"
+        android:menuCategory="container"
+        android:title="Sage Login"
+        tools:menuCategory="system"
+        android:background="@color/subMenu" />
 </menu>
