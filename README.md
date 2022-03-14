@@ -1,5 +1,4 @@
 # GoatSage
-Goat Sage is the premiere artificial intelligence app of today.
 
 <b>Downloads</b>
 
